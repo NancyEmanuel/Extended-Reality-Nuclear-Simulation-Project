@@ -80,7 +80,7 @@ p {
         margin:auto;
         top: 0;
         left: 0;
-        height: 800px;
+        height: 600px;
         width: 100%;
         object-fit: cover;
     }
@@ -107,7 +107,7 @@ p {
 
 #education h3
 {
- font-size: 2.3rem;
+ font-size: 3rem;
  max-width: 100%;
  margin-top: 70px;
  display: flex;
@@ -124,7 +124,7 @@ p {
 	color: black;
 	margin-top: 60px;
     margin-bottom: 50px;
-    width: 50%;
+    width: 70%;
 }
 
 #education video{
@@ -162,7 +162,13 @@ p {
 
 #social-container img {
 	color: #575757;
-	width: 300px;
+	width: 250px;
+	transition: .4s;
+}
+
+.image2 img {
+	color: #575757;
+	width: 20px;
 	transition: .4s;
 }
 
@@ -170,3 +176,8 @@ p {
 	color: #8d8d8d;
 	font-size:25px;
 }
+
+
+
+
+

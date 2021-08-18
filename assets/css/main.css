@@ -19,6 +19,26 @@ p {
 	font-style: normal;
 }
 
+.container {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+]
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.page-content {
+	width:100%;
+}
+
 /**Navbar**/
 
 #nav {
@@ -240,6 +260,15 @@ p {
 	}
 }
 
+iframe{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
 /*css for footer*/
 #footer {
 	height: 15em;
@@ -263,13 +292,11 @@ p {
 
 #social-container img {
 	color: #575757;
-	width: 300px;
-
+	width: 500px;
+	transition: .4s;
 }
 
 #copyright {
 	color: #8d8d8d;
 	font-size:25px;
-
-
 }

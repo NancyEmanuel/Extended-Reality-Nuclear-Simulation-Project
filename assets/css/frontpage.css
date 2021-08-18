@@ -19,6 +19,27 @@ p {
 	font-style: normal;
 }
 
+.container {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.page-content {
+	width:100%;
+}
+
 /**Navbar**/
 
 #nav {
@@ -162,13 +183,7 @@ p {
 
 #social-container img {
 	color: #575757;
-	width: 250px;
-	transition: .4s;
-}
-
-.image2 img {
-	color: #575757;
-	width: 20px;
+	width: 500px;
 	transition: .4s;
 }
 

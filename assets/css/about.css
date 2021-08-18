@@ -10,6 +10,29 @@ body, html{
     padding:0;
 }
 
+
+.container {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.page-content {
+	width:100%;
+}
+
+
 #nav {
 	left: 0%;
 	right: 0%;
@@ -136,7 +159,7 @@ section {
 }
 
 #footer {
-	height: 10em;
+	height: 15em;
 	text-align: center;
 	background-color: #A7A8AA;
 }
@@ -157,7 +180,7 @@ section {
 
 #social-container img {
 	color: #575757;
-	width: 300px;
+	width: 500px;
 	transition: .4s;
 }
 

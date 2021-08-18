@@ -106,7 +106,9 @@ p {
 }
 
 .text {
+	display: flex;
 	text-align: center;
+	justify-content: center;
 	color: white;
 	font-size: 50px;
 	margin-top:250px;
@@ -150,6 +152,12 @@ p {
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-top: 160px;
+}
+
+.parent iframe{
+		width: 50%;
+		display: block;      
+		margin: auto;
 }
 
 .blog-post {
@@ -258,15 +266,6 @@ p {
 		max-width: 100%;
 		transform: translate(0, -8rem);
 	}
-}
-
-iframe{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	flex-wrap: wrap;
-
 }
 
 /*css for footer*/

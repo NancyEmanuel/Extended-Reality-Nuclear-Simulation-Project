@@ -157,8 +157,6 @@ p {
   opacity: 1;
 }
 
-
-
 /**Footer**/
 
 #footer {
@@ -184,6 +182,12 @@ p {
 #social-container img {
 	color: #575757;
 	width: 500px;
+	transition: .4s;
+}
+
+.image2 img {
+	color: #575757;
+	width: 20px;
 	transition: .4s;
 }
 

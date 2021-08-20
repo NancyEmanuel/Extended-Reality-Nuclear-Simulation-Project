@@ -19,7 +19,6 @@ body, html{
 	align-content: center;
 }
 
-
 .row {
 	flex-direction: row;
 }
@@ -97,13 +96,13 @@ section {
     margin-top: 150px;
     box-shadow: 9px 8px black;
     padding-bottom: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     padding-left: 30px;
     padding-right: 10px;
 }
 
 .box {
-    width: 60%;
+    width: 65%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -142,6 +141,42 @@ section {
     color: white;
 }
 
+
+#box2 {
+    padding-top: 30px;
+    background-color: #0077CA;
+	margin-bottom: 50px;
+    box-shadow: 9px 8px black;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.box2 {
+    width: 30%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.section-title2 {
+    padding-bottom: 0px;
+}
+
+
+.section-title2 p {
+    margin: 0;
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+	text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
 .points>li {
     position: relative;
     line-height: 2em;
@@ -157,6 +192,103 @@ section {
 	font-size: 20px;
 	font-weight: bold;
 }
+
+.container2{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.header{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	color: #0077CA;
+	font-size: 50px;
+}
+
+.sb-container{
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.teams{
+	height: 500px;
+	width: 290px;
+	margin: 20px;
+	padding: 22px;
+	cursor: pointer;
+	transition: 0.4s;
+	box-sizing: border-box;
+	background-color: #0077CA;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 6px 6px black;
+	
+}
+
+.teams img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.teams:hover{
+	background: #0077CA;
+	opacity: 0.8;
+	border-radius: 12px;
+}
+
+.name {
+	padding: 12px;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.desig{
+	font-style: italic;
+	color: white;
+}
+
+.about {
+	margin: 20px 0;
+	font-weight: lighter;
+	color: white;
+}
+
+.social-links{
+	margin: 14px;
+}
+
+.social-links a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	transition: .4s;
+
+}
+
+.social-links a:hover{
+	transform: scale(1.5);
+}
+
+.social-links a i{
+	color: white;
+}
+
+@media screen and (max-width:600px){
+	.teams{
+		max-width: 100%;
+	}
+}
+
 
 #footer {
 	height: 15em;

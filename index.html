@@ -18,11 +18,14 @@
 	</head>
 	<body>
 
+		<!-- Skip Navigation for Accessibility -->
+		<a href="#main-content" class="skip-link">Skip to main content</a>
+
 		<!-- Modern Navigation -->
 		<nav id="nav" class="modern-nav">
 			<div class="nav-container">
 				<a href="index.html" class="nav-brand">
-					<i class="fas fa-atom" style="color: #007bff; margin-right: 8px;"></i>
+					<i class="fas fa-atom" style="color: #007bff; margin-right: 8px;" aria-hidden="true"></i>
 					Nuclear Simulation Research Group
 				</a>
 				<div class="nav-menu">
@@ -31,19 +34,19 @@
 						<a href="#features-section" class="nav-link">Projects</a>
 						<div class="dropdown-content">
 							<a href="article5.html" class="dropdown-link">
-								<i class="fas fa-vr-cardboard"></i>
+								<i class="fas fa-vr-cardboard" aria-hidden="true"></i>
 								<span>Virtual Reality Education</span>
 							</a>
 							<a href="article6.html" class="dropdown-link">
-								<i class="fas fa-atom"></i>
+								<i class="fas fa-atom" aria-hidden="true"></i>
 								<span>CANDU Reactors</span>
 							</a>
 							<a href="article1.html" class="dropdown-link">
-								<i class="fas fa-atom"></i>
+								<i class="fas fa-atom" aria-hidden="true"></i>
 								<span>CANDU Virtual Reality Experience</span>
 							</a>
 							<a href="article2.html" class="dropdown-link">
-								<i class="fas fa-atom"></i>
+								<i class="fas fa-atom" aria-hidden="true"></i>
 								<span>Navigation Guide</span>
 							</a>
 							
@@ -60,7 +63,7 @@
 			<!-- Hero Section with Background Video -->
 			<section id="hero-section" class="hero-section">
 				<div class="video-background">
-					<video src="assets/img/NuclearWebsiteVideo (online-video-cutter.com) (2).mp4" muted loop autoplay playsinline></video>
+					<video src="assets/img/NuclearWebsiteVideo (online-video-cutter.com) (2).mp4" muted loop autoplay playsinline aria-label="Background video showing nuclear facility operations and CANDU reactor technology"></video>
 					<div class="video-overlay"></div>
 				</div>
 				<div class="hero-content">
@@ -74,14 +77,14 @@
 							Interactive learning that transforms complex nuclear science into an engaging experience.
 						</p>
 						<div class="hero-actions">
-							<button type="button" class="primary-button" onclick="popupToggle();">
-								<i class="fas fa-play"></i>
-								<span>Launch Experience</span>
-							</button>
-							<button type="button" class="secondary-button" onclick="document.getElementById('features-section').scrollIntoView({behavior: 'smooth'});">
-								<span>Learn More</span>
-								<i class="fas fa-arrow-down"></i>
-							</button>
+													<button type="button" class="primary-button" onclick="popupToggle();">
+							<i class="fas fa-play" aria-hidden="true"></i>
+							<span>Launch Experience</span>
+						</button>
+						<button type="button" class="secondary-button" onclick="document.getElementById('features-section').scrollIntoView({behavior: 'smooth'});">
+							<span>Learn More</span>
+							<i class="fas fa-arrow-down" aria-hidden="true"></i>
+						</button>
 						</div>
 					</div>
 				</div>
@@ -89,24 +92,24 @@
 				<!-- Modern Popup Modal -->
 				<div id="popup" class="modern-popup">
 					<div class="popup-content">
-						<button class="popup-close" onclick="popupToggle();">
-							<i class="fas fa-times"></i>
-						</button>
+											<button class="popup-close" onclick="popupToggle();" aria-label="Close popup modal">
+						<i class="fas fa-times" aria-hidden="true"></i>
+					</button>
 						<div class="popup-header">
 							<h2>Choose Your Learning Path</h2>
 							<p>Select the option that best describes your role to get a personalized experience.</p>
 						</div>
 						<div class="popup-options">
 							<button type="button" class="popup-option" onclick="myFunction()">
-								<i class="fas fa-graduation-cap"></i>
+								<i class="fas fa-graduation-cap" aria-hidden="true"></i>
 								<span>I'm a Student</span>
 							</button>
 							<button type="button" class="popup-option" onclick="myFunction()">
-								<i class="fas fa-users"></i>
+								<i class="fas fa-users" aria-hidden="true"></i>
 								<span>I'm a Parent</span>
 							</button>
 							<button type="button" class="popup-option" onclick="myFunction()">
-								<i class="fas fa-chalkboard-teacher"></i>
+								<i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
 								<span>I'm an Educator</span>
 							</button>
 						</div>
@@ -125,44 +128,64 @@
 						<p>Discover the fascinating world of CANDU reactors through immersive technology</p>
 					</div>
 					<div class="features-grid">
-						<div class="feature-card" onclick="location.href='article5.html';">
+						<div class="feature-card" 
+							 onclick="location.href='article5.html';" 
+							 onkeydown="if(event.key==='Enter'||event.key===' ')location.href='article5.html';" 
+							 tabindex="0" 
+							 role="button" 
+							 aria-label="Learn about Virtual Reality Education - Click to explore VR technology in nuclear education">
 							<div class="feature-icon">
-								<i class="fas fa-vr-cardboard"></i>
+								<i class="fas fa-vr-cardboard" aria-hidden="true"></i>
 							</div>
 							<h3>Virtual Reality</h3>
 							<p>Experience virtual reality learning that makes complex nuclear concepts accessible and engaging.</p>
 							<div class="feature-arrow">
-								<i class="fas fa-arrow-right"></i>
+								<i class="fas fa-arrow-right" aria-hidden="true"></i>
 							</div>
 						</div>
-						<div class="feature-card" onclick="location.href='article6.html';">
+						<div class="feature-card" 
+							 onclick="location.href='article6.html';" 
+							 onkeydown="if(event.key==='Enter'||event.key===' ')location.href='article6.html';" 
+							 tabindex="0" 
+							 role="button" 
+							 aria-label="Learn about CANDU Reactors - Click to explore Canadian heavy water reactor technology">
 							<div class="feature-icon">
-								<i class="fas fa-atom" style="color: #007bff;"></i>
+								<i class="fas fa-atom" style="color: #007bff;" aria-hidden="true"></i>
 							</div>
 							<h3>CANDU Reactors</h3>
 					
 							<div class="feature-arrow">
-								<i class="fas fa-arrow-right"></i>
+								<i class="fas fa-arrow-right" aria-hidden="true"></i>
 							</div>
 						</div>
-						<div class="feature-card" onclick="location.href='article1.html';">
+						<div class="feature-card" 
+							 onclick="location.href='article1.html';" 
+							 onkeydown="if(event.key==='Enter'||event.key===' ')location.href='article1.html';" 
+							 tabindex="0" 
+							 role="button" 
+							 aria-label="Learn about CANDU Virtual Reality Experience - Click to explore installation and setup guide">
 							<div class="feature-icon">
-								<i class="fas fa-atom" style="color: #007bff;"></i>
+								<i class="fas fa-atom" style="color: #007bff;" aria-hidden="true"></i>
 							</div>
 							<h3>CANDU Virtual Reality Experience</h3>
 							
 							<div class="feature-arrow">
-								<i class="fas fa-arrow-right"></i>
+								<i class="fas fa-arrow-right" aria-hidden="true"></i>
 							</div>
 						</div>
-						<div class="feature-card" onclick="location.href='article2.html';">
+						<div class="feature-card" 
+							 onclick="location.href='article2.html';" 
+							 onkeydown="if(event.key==='Enter'||event.key===' ')location.href='article2.html';" 
+							 tabindex="0" 
+							 role="button" 
+							 aria-label="Learn about Navigation Guide - Click to explore how to navigate the VR experience">
 							<div class="feature-icon">
-								<i class="fas fa-atom" style="color: #007bff;"></i>
+								<i class="fas fa-atom" style="color: #007bff;" aria-hidden="true"></i>
 							</div>
 							<h3>Navigation Guide</h3>
 						
 							<div class="feature-arrow">
-								<i class="fas fa-arrow-right"></i>
+								<i class="fas fa-arrow-right" aria-hidden="true"></i>
 							</div>
 						</div>
 						
@@ -178,7 +201,15 @@
 							<h2>CANDU Calandria Reactors</h2>
 						</div>
 						<div class="video-container">
-							<video src="assets/img/Candueducate.mp4" controls></video>
+							<video src="assets/img/Candueducate.mp4" controls aria-label="Educational video about CANDU reactor components and operation"></video>
+							<div class="video-transcript">
+								<details>
+									<summary>View Video Transcript</summary>
+									<div class="transcript-content">
+										<p><strong>Video Transcript:</strong> This educational video explains the fundamental principles of CANDU reactors, including how nuclear fission generates heat, how heavy water moderates neutrons, and how steam generation produces electricity. The video covers key components like fuel channels, calandria, and safety systems.</p>
+									</div>
+								</details>
+							</div>
 						</div>
 						<div class="content-text">
 							<p>CANDU Reactors are Canadian-designed heavy water reactors that represent a pinnacle of nuclear engineering. These reactors utilize natural uranium fuel and heavy water (deuterium oxide) as both moderator and coolant, creating a highly efficient and safe nuclear power generation system.</p>
@@ -198,7 +229,15 @@
 							<h2>CANDU Virtual Reality Experience</h2>
 						</div>
 						<div class="video-container">
-							<video src="assets/img/Copy of VIRTUAL REALITY EDUCATIONAL EXPERIENCE (2).mp4" controls></video>
+							<video src="assets/img/Copy of VIRTUAL REALITY EDUCATIONAL EXPERIENCE (2).mp4" controls aria-label="Virtual Reality Educational Experience overview video"></video>
+							<div class="video-transcript">
+								<details>
+									<summary>View Video Transcript</summary>
+									<div class="transcript-content">
+										<p><strong>Video Transcript:</strong> This video demonstrates the CANDU Virtual Reality Educational Experience, showcasing how students can explore nuclear reactor components in an immersive 3D environment. The VR platform allows users to walk through virtual facilities, interact with components, and learn about nuclear processes through hands-on simulation.</p>
+									</div>
+								</details>
+							</div>
 						</div>
 						<div class="content-text">
 							<p>Step into the future of nuclear education with our immersive VR experience. This cutting-edge educational tool provides students with unprecedented access to CANDU reactor systems, allowing them to explore, interact, and learn in ways traditional textbooks cannot match.</p>
@@ -219,7 +258,7 @@
 								<p>Access our installation guide and begin your VR nuclear education journey today.</p>
 								<button type="button" class="cta-button" onclick="window.location='Instructions.html';">
 									View Instructions
-									<i class="fas fa-arrow-right"></i>
+									<i class="fas fa-arrow-right" aria-hidden="true"></i>
 								</button>
 							</div>
 						</div>
@@ -246,11 +285,11 @@
 						</div>
 						<div class="footer-links">
 							<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank" rel="noopener">
-								<i class="fab fa-github"></i>
+								<i class="fab fa-github" aria-hidden="true"></i>
 								<span>GitHub</span>
 							</a>
 							<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank" rel="noopener">
-								<i class="fas fa-envelope"></i>
+								<i class="fas fa-envelope" aria-hidden="true"></i>
 								<span>Contact Us </span>
 							</a>
 						</div>

@@ -1254,12 +1254,182 @@ a:focus {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-/* Focus states for accessibility */
-.nav-link:focus,
-.dropdown-link:focus,
-.team-contact a:focus {
+/* Skip Navigation for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--accent-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    z-index: 10000;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 6px;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.light-theme .skip-link {
+    background: var(--accent-on-light);
+}
+
+/* Video Transcript Styles for Accessibility */
+.video-transcript {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.video-transcript details {
+    cursor: pointer;
+}
+
+.video-transcript summary {
+    font-weight: 600;
+    color: var(--accent-color);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    background: rgba(0, 123, 255, 0.1);
+    transition: var(--transition);
+}
+
+.video-transcript summary:hover {
+    background: rgba(0, 123, 255, 0.2);
+}
+
+.video-transcript summary:focus {
     outline: 2px solid var(--accent-color);
     outline-offset: 2px;
+}
+
+.video-transcript .transcript-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--border-radius);
+    line-height: 1.6;
+}
+
+.light-theme .video-transcript {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.light-theme .video-transcript summary {
+    color: var(--accent-on-light);
+    background: rgba(0, 82, 204, 0.1);
+}
+
+.light-theme .video-transcript summary:hover {
+    background: rgba(0, 82, 204, 0.2);
+}
+
+.light-theme .video-transcript summary:focus {
+    outline: 2px solid var(--accent-on-light);
+}
+
+.light-theme .video-transcript .transcript-content {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Accessibility Improvements */
+.feature-card[role="button"]:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.light-theme .feature-card[role="button"]:focus {
+    box-shadow: 0 8px 25px rgba(0, 82, 204, 0.3);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .nav-link,
+    .dropdown-link,
+    .cta-button,
+    .primary-button,
+    .secondary-button {
+        border: 2px solid currentColor;
+    }
+    
+    .video-transcript summary {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .skip-link {
+        transition: none;
+    }
+}
+
+/* Enhanced Focus states for accessibility */
+.nav-link:focus,
+.dropdown-link:focus,
+.team-contact a:focus,
+.cta-button:focus,
+.primary-button:focus,
+.secondary-button:focus,
+.popup-option:focus,
+.feature-card:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+    border-radius: var(--border-radius);
+}
+
+/* High contrast focus for better visibility */
+.nav-link:focus-visible,
+.dropdown-link:focus-visible,
+.team-contact a:focus-visible,
+.cta-button:focus-visible,
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.popup-option:focus-visible,
+.feature-card:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+/* Light theme focus states */
+.light-theme .nav-link:focus,
+.light-theme .dropdown-link:focus,
+.light-theme .team-contact a:focus,
+.light-theme .cta-button:focus,
+.light-theme .primary-button:focus,
+.light-theme .secondary-button:focus,
+.light-theme .popup-option:focus,
+.light-theme .feature-card:focus {
+    outline: 2px solid var(--accent-on-light);
+    outline-offset: 2px;
+}
+
+.light-theme .nav-link:focus-visible,
+.light-theme .dropdown-link:focus-visible,
+.light-theme .team-contact a:focus-visible,
+.light-theme .cta-button:focus-visible,
+.light-theme .primary-button:focus-visible,
+.light-theme .secondary-button:focus-visible,
+.light-theme .popup-option:focus-visible,
+.light-theme .feature-card:focus-visible {
+    outline: 3px solid var(--accent-on-light);
+    outline-offset: 3px;
 }
 
 .light-theme .nav-link:focus,

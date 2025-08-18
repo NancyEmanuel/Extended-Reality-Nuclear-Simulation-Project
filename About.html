@@ -100,7 +100,7 @@
 					<div class="features-grid">
 						<div class="feature-card team-card">
 							<div class="team-image">
-								<img src="assets/img/sharman.jpg" alt="Portrait of Sharman Perera, Project Lead">
+								<img src="assets/img/sharman.jpg" alt="Professional headshot of Sharman Perera, Project Lead and Associate Teaching Professor at Ontario Tech University">
 							</div>
 							<h3>Sharman Perera</h3>
 							<div class="team-role">Project Lead</div>
@@ -115,7 +115,7 @@
 
 						<div class="feature-card team-card">
 							<div class="team-image">
-								<img src="assets/img/alvaro.jpg" alt="Portrait of Alvaro Quevedo, Subject Matter Expert">
+								<img src="assets/img/alvaro.jpg" alt="Professional headshot of Alvaro Quevedo, PhD, Subject Matter Expert and Director of Experimental Teaching at Ontario Tech University">
 							</div>
 							<h3>Alvaro Quevedo</h3>
 							<div class="team-role">Subject Matter Expert</div>
@@ -130,7 +130,7 @@
 
 						<div class="feature-card team-card">
 							<div class="team-image">
-								<img src="assets/img/nancy.jpg" alt="Portrait of Nancy Emanuel, Student Virtual Reality Developer">
+								<img src="assets/img/nancy.jpg" alt="Professional headshot of Nancy Emanuel, Student Virtual Reality Developer from the Faculty of Engineering & Applied Science">
 							</div>
 							<h3>Nancy Emanuel</h3>
 							<div class="team-role">Student Virtual Reality Developer</div>
@@ -145,7 +145,7 @@
 
 						<div class="feature-card team-card">
 							<div class="team-image">
-								<img src="assets/img/robson.png" alt="Portrait of Robson Basha, Student Virtual Reality Developer">
+								<img src="assets/img/robson.png" alt="Professional headshot of Robson Basha, Student Virtual Reality Developer from the Faculty of Business & Information Technology">
 							</div>
 							<h3>Robson Basha</h3>
 							<div class="team-role">Student Virtual Reality Developer</div>
@@ -161,42 +161,54 @@
 				</div>
 			</section>
 
-            <div id="box" class="box">
-                <div class="section-title">
-                    <h2>CANDU VIRTUAL REALITY EXPERIENCE</h2>
-                    <p>ACKNOWLEDGEMENTS</p>
-                </div>
-                <div><h4>
-                    We'd like to thank and acknowledge Ecampus Ontario for providing the funding for this initiative. We'd also like to acknowledge Ontario Tech University, Durhman College, and Ryerson University for their contributions to this project.
-                </h4></div>
-            </div>
-        </section>
+			<!-- Acknowledgements Section -->
+			<section class="education-section">
+				<div class="container">
+					<div class="education-content">
+						<div class="content-header">
+							<h2>Acknowledgements</h2>
+						</div>
+						<div class="content-text">
+							<p>We'd like to thank and acknowledge eCampus Ontario for providing the funding for this initiative. We'd also like to acknowledge Ontario Tech University, Durham College, and Ryerson University for their contributions to this project.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <script>
-			window.onscroll = function() {scrollFunction()};
-		
-			function scrollFunction() {
-			if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-				document.getElementById("nav").style.top = "0";
-			} else {
-				document.getElementById("nav").style.top = "0px";
-			}
-			}
+			<!-- Footer -->
+			<footer id="footer" class="modern-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-brand">
+							<p>Transforming nuclear education through immersive virtual reality experiences.</p>
+						</div>
+						<div class="footer-links">
+							<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i>
+								<span>GitHub</span>
+							</a>
+							<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank" rel="noopener">
+								<i class="fas fa-envelope"></i>
+								<span>Contact Us</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<!-- Scripts -->
+		<script>
+			// Modern scroll navigation
+			window.addEventListener('scroll', function() {
+				const nav = document.getElementById('nav');
+				if (window.scrollY > 100) {
+					nav.classList.add('scrolled');
+				} else {
+					nav.classList.remove('scrolled');
+				}
+			});
 		</script>
-
-        <section class="container column" id="footer">
-                        
-            <div class="container row" id="social-container">
-                <img src="assets/img/logoimage.jpg">
-                <span>•</span>
-                <a href="https://github.com/alvarojuq/CANDU_VR" target="_blank">Github</a>
-                <span>•</span>
-                <a href="mailto:sharman.perera@ontariotechu.ca" target="_blank">Email</a>
-            </div>
-            <div>
-                <p id="copyright">All Rights Belong to @eCampus Ontario</p>
-            </div>
-        </section>
 
 
 </body>

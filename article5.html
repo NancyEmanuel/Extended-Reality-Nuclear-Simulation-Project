@@ -1,72 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
-		<meta name="description" content="Candu website">
-		<meta name="keywords" content="Candu website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Learn about Virtual Reality education and its application in CANDU nuclear reactor training">
+		<meta name="keywords" content="CANDU, Nuclear Reactor, VR Education, Virtual Reality, Immersive Learning">
 
-  		<link rel="stylesheet" href="assets/css/frontpage.css">
-  		<link rel="icon" href="assets/img/letter-c.png">
-		<link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="icon" href="assets/img/letter-c.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/b083d8f829.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-		<title>CANDU WEBSITE</title>
+		<title>Virtual Reality Education - Nuclear Simulation Research Group</title>
 
 	</head>
-	<body>
+	<body class="light-theme">
 
-		<!--Navigation Bar-->
-		<div id="nav">
-            <a href="index.html" class="nav-item right">CANDU</a> 
-            <a href="contact.html" class="nav-item left">CONTACT US</a>
-            <a href="Instructions.html" class="nav-item left">INSTRUCTIONS</a>
-            <a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe"  class="nav-item left">GET STARTED</a>
-            <a href="About.html" class="nav-item left">ABOUT</a>
-        </div>    
-	
+		<!-- Modern Navigation -->
+		<nav id="nav" class="modern-nav">
+			<div class="nav-container">
+				<a href="index.html" class="nav-brand">
+					<i class="fas fa-atom" style="color: var(--accent-on-light); margin-right: 8px;"></i>
+					Nuclear Simulation Research Group
+				</a>
+				<div class="nav-menu">
+					<a href="About.html" class="nav-link">About</a>
+					<div class="nav-dropdown">
+						<a href="index.html#features-section" class="nav-link">Projects</a>
+						<div class="dropdown-content">
+							<a href="article5.html" class="dropdown-link">
+								<i class="fas fa-vr-cardboard"></i>
+								<span>Virtual Reality</span>
+							</a>
+							<a href="article6.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Physics</span>
+							</a>
+							<a href="article1.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Engineering</span>
+							</a>
+							<a href="article2.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Fluid Systems</span>
+							</a>
+							<a href="article3.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Control Systems</span>
+							</a>
+						</div>
+					</div>
+					<a href="Instructions.html" class="nav-link">Instructions</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+					<a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe" class="nav-link cta-button">Get Started</a>
+				</div>
+			</div>
+		</nav>
 
-    	    <!--Home Page-->
-			<section id="home-section">
-				<div class="row">
-					<div class="row" id="landing-container">
-                        <video src="assets/img/vrvidcover.mp4" muted autoplay loop></video>
+		<main class="main-content">
+			<!-- Hero Section -->
+			<section class="hero-section" style="height: 50vh;">
+				<div class="video-background">
+					<video src="assets/img/vrvidcover.mp4" muted autoplay loop playsinline alt="Virtual reality headset demonstration video"></video>
+					<div class="video-overlay"></div>
+				</div>
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title" style="font-size: 3rem;">
+							Virtual Reality Education
+						</h1>
+						<p class="hero-description">
+							Discover how VR technology is transforming nuclear education and training.
+						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="container column parallax" id="education-section">
-				<div class="container column" id="text">
-					<div class="container row" id="education">
-							<h3>Learn about VR education</h3>
-                            
-							<div class="paragraph">
-								<p>Virtual Reality is the computer generated simulated experience of a dimensional environment with visual and environmental stimuli. Virtual Reality isolates the user from the real world to create an immersion effect that gives the user the feeling of being present in an virtual world.This video explains what Virtual Reality is and how it is being used to modernize the education and training process regarding CANDU reactors. The video goes into depth and explains what Virtual Reality is and how it can benefit students looking to learn more about CANDU Reactors.</p>
-							</div>
-				
+			<!-- Content Section -->
+			<section class="education-section">
+				<div class="container">
+					<div class="education-content">
+						<div class="content-header">
+							<h2>Learn About VR Education</h2>
+						</div>
+						<div class="content-text">
+							<p>Virtual Reality is a computer-generated simulated experience of a three-dimensional environment with visual and environmental stimuli. Virtual Reality isolates the user from the real world to create an immersion effect that gives the user the feeling of being present in a virtual world.</p>
 							
-							<video src="assets/img/Copy of VIRTUAL REALITY EDUCATIONAL EXPERIENCE (2).mp4" controls ></video>
-						
-				
-
+							<h3>VR in Nuclear Education</h3>
+							<p>This video explains what Virtual Reality is and how it is being used to modernize the education and training process regarding CANDU reactors. The video goes into depth about Virtual Reality technology and how it can benefit students looking to learn more about CANDU Reactors.</p>
+							
+							<h3>Benefits of VR Learning</h3>
+							<ul>
+								<li><strong>Immersive Experience:</strong> Students can explore reactor components in a safe, controlled virtual environment</li>
+								<li><strong>Interactive Learning:</strong> Hands-on interaction with complex nuclear systems</li>
+								<li><strong>Accessibility:</strong> Remote access to expensive and restricted nuclear facilities</li>
+								<li><strong>Safety:</strong> Learn about dangerous processes without physical risk</li>
+								<li><strong>Repeatability:</strong> Practice procedures multiple times for better retention</li>
+							</ul>
+						</div>
+						<div class="video-container">
+							<video src="assets/img/Copy of VIRTUAL REALITY EDUCATIONAL EXPERIENCE (2).mp4" controls aria-label="Virtual Reality Educational Experience overview video"></video>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="container column" id="footer">
-				
-				<div class="container row" id="social-container">
-					<img src="assets/img/logoimage.jpg">
-					<span>•</span>
-					<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank">Github</a>
-					<span>•</span>
-					<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank">Email</a>
+			<!-- Footer -->
+			<footer id="footer" class="modern-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-brand">
+							<p>Transforming nuclear education through immersive virtual reality experiences.</p>
+						</div>
+						<div class="footer-links">
+							<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i>
+								<span>GitHub</span>
+							</a>
+							<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank" rel="noopener">
+								<i class="fas fa-envelope"></i>
+								<span>Contact Us</span>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div>
-					<p id="copyright">All Rights Belong to @eCampus Ontario</p>
-				</div>
-			</section>
-        
+			</footer>
+		</main>
+
+		<!-- Scripts -->
+		<script>
+			// Modern scroll navigation
+			window.addEventListener('scroll', function() {
+				const nav = document.getElementById('nav');
+				if (window.scrollY > 100) {
+					nav.classList.add('scrolled');
+				} else {
+					nav.classList.remove('scrolled');
+				}
+			});
+		</script>
+
 </body>
 </html>

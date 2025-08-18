@@ -1,48 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
-		<meta name="description" content="Candu website">
-		<meta name="keywords" content="Candu website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Contact the CANDU Nuclear Reactor VR Educational Experience team">
+		<meta name="keywords" content="CANDU, Nuclear Reactor, VR Education, Virtual Reality, Contact">
 
-  		<link rel="stylesheet" href="assets/css/main.css">
-  		<link rel="icon" href="assets/img/letter-c.png">
-		<link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="icon" href="assets/img/letter-c.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/b083d8f829.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-		<title>CANDU WEBSITE</title>
+		<title>Contact - Nuclear Simulation Research Group</title>
 
 	</head>
-	<body>
+	<body class="light-theme">
 
-		<!--Navigation Bar-->
-		<div id="nav">
-            <a href="index.html" class="nav-item right">CANDU</a> 
-            <a href="contact.html" class="nav-item left">CONTACT US</a>
-            <a href="Instructions.html" class="nav-item left">INSTRUCTIONS</a>
-            <a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe"  class="nav-item left">GET STARTED</a>
-            <a href="About.html" class="nav-item left">ABOUT</a>
-        </div>    
+		<!-- Modern Navigation -->
+		<nav id="nav" class="modern-nav">
+			<div class="nav-container">
+				<a href="index.html" class="nav-brand">
+					<i class="fas fa-atom" style="color: var(--accent-on-light); margin-right: 8px;"></i>
+					Nuclear Simulation Research Group
+				</a>
+				<div class="nav-menu">
+					<a href="About.html" class="nav-link">About</a>
+					<div class="nav-dropdown">
+						<a href="index.html#features-section" class="nav-link">Projects</a>
+						<div class="dropdown-content">
+							<a href="article5.html" class="dropdown-link">
+								<i class="fas fa-vr-cardboard"></i>
+								<span>Virtual Reality</span>
+							</a>
+							<a href="article6.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Physics</span>
+							</a>
+							<a href="article1.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Engineering</span>
+							</a>
+							<a href="article2.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Fluid Systems</span>
+							</a>
+							<a href="article3.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Control Systems</span>
+							</a>
+						</div>
+					</div>
+					<a href="Instructions.html" class="nav-link">Instructions</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+					<a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe" class="nav-link cta-button">Get Started</a>
+				</div>
+			</div>
+		</nav>
 
-    	    <!--Home Page-->
-			<section id="home-section">
-				<div class="container row">
-					<div class="container row" id="landing-container">
-                        <div class="text">
-                            <h2>CONTACT US</h2>
-                        </div>
+		<main class="main-content">
+			<!-- Hero Section -->
+			<section class="hero-section" style="height: 40vh; background: linear-gradient(135deg, var(--accent-on-light), #005999);">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title" style="color: white; font-size: 3rem;">
+							Contact Us
+						</h1>
+						<p class="hero-description" style="color: rgba(255, 255, 255, 0.9);">
+							Get in touch with our team for questions about the CANDU Virtual Reality Educational Experience.
+						</p>
 					</div>
 				</div>
 			</section>
 
-            <div class="parent">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4bgVkP_UbCLyFV8sfOk9Rp3wI19RLjw7GZk9hmDmlbzqQ8Q/viewform?embedded=true" width="1500" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-			
-	
-        
+			<!-- Contact Form Section -->
+			<section class="features-section">
+				<div class="container">
+					<div class="section-header">
+						<h2>Send us a Message</h2>
+						<p>Fill out the form below and we'll get back to you as soon as possible</p>
+					</div>
+					<div class="contact-form-container" style="max-width: 1000px; margin: 0 auto;">
+						<iframe 
+							src="https://docs.google.com/forms/d/e/1FAIpQLSd4bgVkP_UbCLyFV8sfOk9Rp3wI19RLjw7GZk9hmDmlbzqQ8Q/viewform?embedded=true" 
+							width="100%" 
+							height="800" 
+							frameborder="0" 
+							marginheight="0" 
+							marginwidth="0"
+							title="Contact Form - CANDU VR Educational Experience"
+							style="border-radius: var(--border-radius-large); box-shadow: var(--shadow-light);">
+							Loading contact form...
+						</iframe>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer" class="modern-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-brand">
+							<p>Transforming nuclear education through immersive virtual reality experiences.</p>
+						</div>
+						<div class="footer-links">
+							<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i>
+								<span>GitHub</span>
+							</a>
+							<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank" rel="noopener">
+								<i class="fas fa-envelope"></i>
+								<span>Contact Us</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<!-- Scripts -->
+		<script>
+			// Modern scroll navigation
+			window.addEventListener('scroll', function() {
+				const nav = document.getElementById('nav');
+				if (window.scrollY > 100) {
+					nav.classList.add('scrolled');
+				} else {
+					nav.classList.remove('scrolled');
+				}
+			});
+		</script>
 
 </body>
 </html>

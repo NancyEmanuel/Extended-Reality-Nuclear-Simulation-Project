@@ -1,66 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
-		<meta name="description" content="Candu website">
-		<meta name="keywords" content="Candu website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Complete installation guide for the CANDU Virtual Reality Educational Experience">
+		<meta name="keywords" content="CANDU, Nuclear Reactor, VR Education, Installation, Windows, Setup Guide">
 
-  		<link rel="stylesheet" href="assets/css/frontpage.css">
-  		<link rel="icon" href="assets/img/letter-c.png">
-		<link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="icon" href="assets/img/letter-c.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/b083d8f829.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-		<title>CANDU WEBSITE</title>
+		<title>Installation Guide - Nuclear Simulation Research Group</title>
 
 	</head>
 	<body>
 
-		<!--Navigation Bar-->
-		<div id="nav">
-            <a href="index.html" class="nav-item right">CANDU</a> 
-            <a href="contact.html" class="nav-item left">CONTACT US</a>
-            <a href="Instructions.html" class="nav-item left">INSTRUCTIONS</a>
-            <a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe"  class="nav-item left">GET STARTED</a>
-            <a href="About.html" class="nav-item left">ABOUT</a>
-        </div>    
+		<!-- Modern Navigation -->
+		<nav id="nav" class="modern-nav">
+			<div class="nav-container">
+				<a href="index.html" class="nav-brand">
+					<i class="fas fa-atom" style="color: #007bff; margin-right: 8px;"></i>
+					Nuclear Simulation Research Group
+				</a>
+				<div class="nav-menu">
+					<a href="About.html" class="nav-link">About</a>
+					<div class="nav-dropdown">
+						<a href="index.html#features-section" class="nav-link">Projects</a>
+						<div class="dropdown-content">
+							<a href="article5.html" class="dropdown-link">
+								<i class="fas fa-vr-cardboard"></i>
+								<span>Virtual Reality</span>
+							</a>
+							<a href="article6.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Physics</span>
+							</a>
+							<a href="article1.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Engineering</span>
+							</a>
+							<a href="article2.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Fluid Systems</span>
+							</a>
+							<a href="article3.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Control Systems</span>
+							</a>
+						</div>
+					</div>
+					<a href="Instructions.html" class="nav-link">Instructions</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+					<a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe" class="nav-link cta-button">Get Started</a>
+				</div>
+			</div>
+		</nav>
 
-    	    <!--Home Page-->
-			<section id="home-section">
-				<div class="row">
-					<div class="row" id="landing-container">
-						<video src="assets/img/Pexels Videos 946146.mp4" muted loop autoplay></video>
+		<main class="main-content">
+			<!-- Hero Section with Video -->
+			<section class="hero-section">
+				<div class="video-background">
+					<video src="assets/img/Pexels Videos 946146.mp4" muted loop autoplay playsinline aria-label="Background video showing technology and innovation"></video>
+					<div class="video-overlay"></div>
+				</div>
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">
+							<span class="hero-subtitle">Installation</span>
+							Getting Started Guide
+						</h1>
+						<p class="hero-description">
+							Learn how to download, install, and launch the CANDU Virtual Reality Educational Experience on your Windows device.
+						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="container column parallax" id="education-section">
-				<div class="container column" id="text">
-					<div class="container row" id="education">
-							<h3>How to Access the CANDU Virtual Reality Experience</h3>
-                            
-							<div class="paragraph">
-								<p>To access the CANDU Virtual Reality Educational Experience, click on the get started button on the homepage. A dropdown menu will appear asking if you are a student, parent, or educator. Choose the option that best describes you. A executable file will then automatically download, click on it to open it up. A popup window stating "windows protected your PC" will appear, simply click the "more info" text, and then the run anyways option. Another popup will appear asking if you give permission to allow this program to make changes to your PC, click the yes option. The installation setup will then appear, simply click the next, and install buttons and wait for the program to install. Once done make sure the launch option is checked, and click finish. The CANDU Virtual Reality Educational program is now installed on your computer and will launch. These steps are showcased in the video below.</p>
-							</div>
-							<video src="assets/img/CANDU EDUCATIONAL.mp4" controls ></video>
+			<!-- Installation Steps Section -->
+			<section class="education-section">
+				<div class="container">
+					<div class="education-content">
+						<div class="content-header">
+							<h2>How to Access the CANDU Virtual Reality Experience</h2>
+						</div>
+						<div class="content-text">
+							<p>To access the CANDU Virtual Reality Educational Experience, follow these simple steps:</p>
+							
+							<ol style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li><strong>Download the Program:</strong> Click on the "Get Started" button on the homepage or in the navigation menu.</li>
+								<li><strong>Choose Your Role:</strong> A dropdown menu will appear asking if you are a student, parent, or educator. Choose the option that best describes you.</li>
+								<li><strong>Download Begins:</strong> An executable file will automatically download to your computer.</li>
+								<li><strong>Run the Installer:</strong> Click on the downloaded file to open it up.</li>
+								<li><strong>Security Warning:</strong> A popup window stating "Windows protected your PC" will appear. Simply click the "More info" text, then click "Run anyway".</li>
+								<li><strong>Administrator Permission:</strong> Another popup will ask if you give permission to allow this program to make changes to your PC. Click "Yes".</li>
+								<li><strong>Installation Setup:</strong> The installation setup will appear. Click "Next" and "Install" buttons and wait for the program to install.</li>
+								<li><strong>Launch:</strong> Once installation is complete, make sure the launch option is checked and click "Finish". The CANDU Virtual Reality Educational program will now launch.</li>
+							</ol>
+							
+							<p>These steps are demonstrated in detail in the video below.</p>
+						</div>
+						<div class="video-container">
+							<video src="assets/img/CANDU EDUCATIONAL.mp4" controls aria-label="Video tutorial showing CANDU VR installation process"></video>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="container column" id="footer">
-				
-				<div class="container row" id="social-container">
-					<img src="assets/img/logoimage.jpg">
-					<span>•</span>
-					<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank">Github</a>
-					<span>•</span>
-					<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank">Email</a>
-				</div>
-				<div>
-					<p id="copyright">All Rights Belong to @eCampus Ontario</p>
+			<!-- Troubleshooting Section -->
+			<section class="education-section alt-section">
+				<div class="container">
+					<div class="education-content">
+						<div class="content-header">
+							<h2>Troubleshooting</h2>
+						</div>
+						<div class="content-text">
+							<p><strong>Common Issues and Solutions:</strong></p>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Download Issues</h3>
+							<p>If the download doesn't start automatically, try right-clicking the "Get Started" button and selecting "Save link as" or "Download linked file".</p>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Installation Blocked</h3>
+							<p>If Windows Defender or your antivirus software blocks the installation, temporarily disable real-time protection during installation, then re-enable it afterward.</p>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Performance Issues</h3>
+							<p>Ensure your system meets the minimum requirements: Windows OS, 4GB RAM, and a DirectX-compatible graphics card.</p>
+							
+							<p style="margin-top: 2rem;"><strong>Still having trouble?</strong> <a href="contact.html" style="color: var(--accent-color);">Contact our support team</a> for personalized assistance.</p>
+						</div>
+					</div>
 				</div>
 			</section>
-        
-</body>
+
+			<!-- Footer -->
+			<footer id="footer" class="modern-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-brand">
+							<img src="assets/img/logoimage.jpg" alt="Ontario Tech University and partner institutions logos">
+							<p>Transforming nuclear education through immersive virtual reality experiences.</p>
+						</div>
+						<div class="footer-links">
+							<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i>
+								<span>GitHub</span>
+							</a>
+							<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank" rel="noopener">
+								<i class="fas fa-envelope"></i>
+								<span>Contact Us</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<p>All Rights Belong to @eCampus Ontario</p>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<!-- Scripts -->
+		<script>
+			// Modern scroll navigation
+			window.addEventListener('scroll', function() {
+				const nav = document.getElementById('nav');
+				if (window.scrollY > 100) {
+					nav.classList.add('scrolled');
+				} else {
+					nav.classList.remove('scrolled');
+				}
+			});
+		</script>
+
+	</body>
 </html>

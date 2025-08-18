@@ -1,66 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
-		<meta name="description" content="Candu website">
-		<meta name="keywords" content="Candu website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Tips and best practices to maximize your CANDU Virtual Reality Educational Experience">
+		<meta name="keywords" content="CANDU, Nuclear Reactor, VR Education, Learning Tips, Best Practices, Study Guide">
 
-  		<link rel="stylesheet" href="assets/css/frontpage.css">
-  		<link rel="icon" href="assets/img/letter-c.png">
-		<link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="icon" href="assets/img/letter-c.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/b083d8f829.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-		<title>CANDU WEBSITE</title>
+		<title>Learning Tips - Nuclear Simulation Research Group</title>
 
 	</head>
 	<body>
 
-		<!--Navigation Bar-->
-		<div id="nav">
-            <a href="index.html" class="nav-item right">CANDU</a> 
-            <a href="contact.html" class="nav-item left">CONTACT US</a>
-            <a href="Instructions.html" class="nav-item left">INSTRUCTIONS</a>
-            <a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe"  class="nav-item left">GET STARTED</a>
-            <a href="About.html" class="nav-item left">ABOUT</a>
-        </div>    
+		<!-- Modern Navigation -->
+		<nav id="nav" class="modern-nav">
+			<div class="nav-container">
+				<a href="index.html" class="nav-brand">
+					<i class="fas fa-atom" style="color: #007bff; margin-right: 8px;"></i>
+					Nuclear Simulation Research Group
+				</a>
+				<div class="nav-menu">
+					<a href="About.html" class="nav-link">About</a>
+					<div class="nav-dropdown">
+						<a href="index.html#features-section" class="nav-link">Projects</a>
+						<div class="dropdown-content">
+							<a href="article5.html" class="dropdown-link">
+								<i class="fas fa-vr-cardboard"></i>
+								<span>Virtual Reality</span>
+							</a>
+							<a href="article6.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Physics</span>
+							</a>
+							<a href="article1.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Reactor Engineering</span>
+							</a>
+							<a href="article2.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Fluid Systems</span>
+							</a>
+							<a href="article3.html" class="dropdown-link">
+								<i class="fas fa-atom"></i>
+								<span>Control Systems</span>
+							</a>
+						</div>
+					</div>
+					<a href="Instructions.html" class="nav-link">Instructions</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+					<a href="https://github.com/NancyEmanuel/canduvr2/releases/download/3/CANDUVirtualRealityProgram.exe" class="nav-link cta-button">Get Started</a>
+				</div>
+			</div>
+		</nav>
 
-    	    <!--Home Page-->
-			<section id="home-section">
-				<div class="row">
-					<div class="row" id="landing-container">
-						<video src="assets/img/video.mp4" muted loop autoplay></video>
+		<main class="main-content">
+			<!-- Hero Section with Video -->
+			<section class="hero-section">
+				<div class="video-background">
+					<video src="assets/img/video.mp4" muted loop autoplay playsinline aria-label="Background video showing educational content and learning"></video>
+					<div class="video-overlay"></div>
+				</div>
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">
+							<span class="hero-subtitle">Maximize Your</span>
+							Learning Experience
+						</h1>
+						<p class="hero-description">
+							Discover the best practices and tips to get the most out of your CANDU Virtual Reality Educational Experience.
+						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="container column parallax" id="education-section">
-				<div class="container column" id="text">
-					<div class="container row" id="education">
-							<h3>How to Make The Most Out of Your Learning Experience </h3>
-                            
-							<div class="paragraph">
-								<p>In order to make the most out of your learning experience, it is important to first spend some time reading the articles and watching the videos on the CANDU website. To get started, read the instruction articles on "How to access the CANDU Virtual Reality Educational Experience", and "How to navigate in the Candu Virtual Reality Educational Experience". Reading these articles will inform you on how to succesfully install, access, navigate, and interact with the CANDU Virtual Reality Educational Experience software. It is also useful to watch the 2 videos on the CANDU website homepage. The "Candu Calandria Reactor" video will give you the knowledge required to understand the components of CANDU reactors and sucessfully complete the CANDU quiz. Once you install and run the CANDU Virtual Reality Educational Experience program, make sure to listen carefully to the voice instructions and read the dialog so you know what tasks you should attempt. To escape from any virtual room you are in and return to the menu option, simply press the escape(esc) and shift buttons on your keyboard. </p>
-							</div>
+			<!-- Learning Tips Section -->
+			<section class="education-section">
+				<div class="container">
+					<div class="education-content">
+						<div class="content-header">
+							<h2>How to Make the Most Out of Your Learning Experience</h2>
+						</div>
+						<div class="content-text">
+							<p>To maximize your learning experience with the CANDU Virtual Reality Educational Experience, it's important to prepare properly and follow these best practices:</p>
 							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Preparation Phase</h3>
+							<ol style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li><strong>Read the Documentation:</strong> Start by reading the instruction articles on "How to Access the CANDU Virtual Reality Educational Experience" and "How to Navigate in the CANDU Virtual Reality Educational Experience"</li>
+								<li><strong>Watch Preparatory Videos:</strong> View the educational videos on the homepage, particularly the "CANDU Calandria Reactor" video to understand reactor components</li>
+								<li><strong>Review Nuclear Concepts:</strong> Familiarize yourself with basic nuclear physics and reactor principles before entering the VR environment</li>
+							</ol>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">During Your VR Experience</h3>
+							<ol style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li><strong>Listen to Voice Instructions:</strong> Pay careful attention to the voice guidance provided throughout the experience</li>
+								<li><strong>Read Dialog Boxes:</strong> Take time to read all dialog and information panels to understand the tasks you should attempt</li>
+								<li><strong>Interact with Components:</strong> Click on different reactor components to learn about their functions and properties</li>
+								<li><strong>Take Your Time:</strong> Don't rush through the experience - explore each area thoroughly</li>
+							</ol>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Navigation Tips</h3>
+							<ul style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li><strong>Emergency Exit:</strong> Press Escape (Esc) + Shift keys simultaneously to return to the menu from any virtual room</li>
+								<li><strong>Movement Controls:</strong> Use WASD keys for movement and mouse for looking around</li>
+								<li><strong>Teleportation:</strong> Use the T key to teleport between designated areas</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="container column" id="footer">
-				
-				<div class="container row" id="social-container">
-					<img src="assets/img/logoimage.jpg">
-					<span>•</span>
-					<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank">Github</a>
-					<span>•</span>
-					<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank">Email</a>
-				</div>
-				<div>
-					<p id="copyright">All Rights Belong to @eCampus Ontario</p>
+			<!-- Study Strategies Section -->
+			<section class="education-section alt-section">
+				<div class="container">
+					<div class="education-content">
+						<div class="content-header">
+							<h2>Effective Study Strategies</h2>
+						</div>
+						<div class="content-text">
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Before Using VR</h3>
+							<ul style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li>Set specific learning objectives for each session</li>
+								<li>Review relevant nuclear engineering concepts</li>
+								<li>Prepare questions you want to explore in the VR environment</li>
+								<li>Ensure you have adequate time for a complete session</li>
+							</ul>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">During VR Sessions</h3>
+							<ul style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li>Take notes on key observations and learnings</li>
+								<li>Experiment with different viewing angles of components</li>
+								<li>Complete all interactive elements and quizzes</li>
+								<li>Revisit complex areas multiple times for better understanding</li>
+							</ul>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">After VR Sessions</h3>
+							<ul style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li>Review your notes and consolidate key learnings</li>
+								<li>Research additional information about components you found interesting</li>
+								<li>Discuss your experience with peers or instructors</li>
+								<li>Plan your next VR session based on areas needing more exploration</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
-        
-</body>
+
+			<!-- Quiz Preparation Section -->
+			<section class="education-section">
+				<div class="container">
+					<div class="education-content">
+						<div class="content-header">
+							<h2>Quiz Preparation</h2>
+						</div>
+						<div class="content-text">
+							<p>The CANDU VR experience includes assessment components to test your understanding. Here's how to prepare:</p>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Key Topics to Master</h3>
+							<ul style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li><strong>Reactor Components:</strong> Understand the function of each major component</li>
+								<li><strong>Nuclear Processes:</strong> Grasp the fundamentals of nuclear fission and heat generation</li>
+								<li><strong>Safety Systems:</strong> Learn about the various safety mechanisms in place</li>
+								<li><strong>Coolant Systems:</strong> Understand how heat is transferred and managed</li>
+								<li><strong>Control Systems:</strong> Learn how the reactor is controlled and monitored</li>
+							</ul>
+							
+							<h3 style="color: var(--accent-color); margin-top: 2rem; margin-bottom: 1rem;">Study Resources</h3>
+							<ul style="color: var(--secondary-text); margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
+								<li>Homepage educational videos</li>
+								<li>Interactive VR component labels and descriptions</li>
+								<li>Voice narration throughout the VR experience</li>
+								<li>Additional nuclear engineering textbooks and resources</li>
+							</ul>
+							
+							<p style="margin-top: 2rem;"><strong>Need additional support?</strong> <a href="contact.html" style="color: var(--accent-color);">Contact our educational team</a> for personalized learning assistance and study guidance.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer" class="modern-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-brand">
+							<img src="assets/img/logoimage.jpg" alt="Ontario Tech University and partner institutions logos">
+							<p>Transforming nuclear education through immersive virtual reality experiences.</p>
+						</div>
+						<div class="footer-links">
+							<a href="https://github.com/alvarojuq/CANDU_VR" target="_blank" rel="noopener">
+								<i class="fab fa-github"></i>
+								<span>GitHub</span>
+							</a>
+							<a href="mailto:sharman.perera@ontariotechu.ca" target="_blank" rel="noopener">
+								<i class="fas fa-envelope"></i>
+								<span>Contact Us</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<p>All Rights Belong to @eCampus Ontario</p>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<!-- Scripts -->
+		<script>
+			// Modern scroll navigation
+			window.addEventListener('scroll', function() {
+				const nav = document.getElementById('nav');
+				if (window.scrollY > 100) {
+					nav.classList.add('scrolled');
+				} else {
+					nav.classList.remove('scrolled');
+				}
+			});
+		</script>
+
+	</body>
 </html>

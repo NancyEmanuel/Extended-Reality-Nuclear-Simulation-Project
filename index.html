@@ -22,7 +22,7 @@
 		<nav id="nav" class="modern-nav">
 			<div class="nav-container">
 				<a href="index.html" class="nav-brand">
-					<i class="fas fa-atom" style="color: #007bff; margin-right: 8px;"></i>
+					<i class="fas fa-atom" style="color: var(--accent-color); margin-right: 8px;"></i>
 					Nuclear Simulation Research Group
 				</a>
 				<div class="nav-menu">
@@ -60,7 +60,10 @@
 			<!-- Hero Section with Background Video -->
 			<section id="hero-section" class="hero-section">
 				<div class="video-background">
-					<video src="assets/img/NuclearWebsiteVideo (online-video-cutter.com) (2).mp4" muted loop autoplay playsinline></video>
+					<video src="assets/img/NuclearWebsiteVideo (online-video-cutter.com) (2).mp4" muted loop autoplay playsinline controls aria-label="Background video showcasing nuclear reactor facility and educational content">
+						<track kind="captions" src="assets/captions/hero-video-captions.vtt" srclang="en" label="English Captions" default>
+						<p>Your browser does not support the video element. This video showcases nuclear reactor facilities and educational content.</p>
+					</video>
 					<div class="video-overlay"></div>
 				</div>
 				<div class="hero-content">
@@ -137,7 +140,7 @@
 						</div>
 						<div class="feature-card" onclick="location.href='article6.html';">
 							<div class="feature-icon">
-								<i class="fas fa-atom" style="color: #007bff;"></i>
+								<i class="fas fa-atom" style="color: var(--accent-color);"></i>
 							</div>
 							<h3>CANDU Reactors</h3>
 					
@@ -147,7 +150,7 @@
 						</div>
 						<div class="feature-card" onclick="location.href='article1.html';">
 							<div class="feature-icon">
-								<i class="fas fa-atom" style="color: #007bff;"></i>
+								<i class="fas fa-atom" style="color: var(--accent-color);"></i>
 							</div>
 							<h3>CANDU Virtual Reality Experience</h3>
 							
@@ -157,7 +160,7 @@
 						</div>
 						<div class="feature-card" onclick="location.href='article2.html';">
 							<div class="feature-icon">
-								<i class="fas fa-atom" style="color: #007bff;"></i>
+								<i class="fas fa-atom" style="color: var(--accent-color);"></i>
 							</div>
 							<h3>Navigation Guide</h3>
 						
@@ -178,7 +181,10 @@
 							<h2>CANDU Calandria Reactors</h2>
 						</div>
 						<div class="video-container">
-							<video src="assets/img/Candueducate.mp4" controls></video>
+							<video src="assets/img/Candueducate.mp4" controls aria-label="Educational video explaining CANDU Calandria reactor operation and components">
+								<track kind="captions" src="assets/captions/candueducate-captions.vtt" srclang="en" label="English Captions" default>
+								<p>Your browser does not support the video element. This educational video explains CANDU Calandria reactor operation and components.</p>
+							</video>
 						</div>
 						<div class="content-text">
 							<p>CANDU Reactors are Canadian-designed heavy water reactors that represent a pinnacle of nuclear engineering. These reactors utilize natural uranium fuel and heavy water (deuterium oxide) as both moderator and coolant, creating a highly efficient and safe nuclear power generation system.</p>
@@ -198,7 +204,10 @@
 							<h2>CANDU Virtual Reality Experience</h2>
 						</div>
 						<div class="video-container">
-							<video src="assets/img/Copy of VIRTUAL REALITY EDUCATIONAL EXPERIENCE (2).mp4" controls></video>
+							<video src="assets/img/Copy of VIRTUAL REALITY EDUCATIONAL EXPERIENCE (2).mp4" controls aria-label="Virtual Reality Educational Experience demonstration and overview">
+								<track kind="captions" src="assets/captions/vr-experience-captions.vtt" srclang="en" label="English Captions" default>
+								<p>Your browser does not support the video element. This video demonstrates the Virtual Reality Educational Experience and its features.</p>
+							</video>
 						</div>
 						<div class="content-text">
 							<p>Step into the future of nuclear education with our immersive VR experience. This cutting-edge educational tool provides students with unprecedented access to CANDU reactor systems, allowing them to explore, interact, and learn in ways traditional textbooks cannot match.</p>

@@ -1296,3 +1296,41 @@ a:focus {
 
 
 
+
+
+/* Enhanced Accessibility Improvements */
+.feature-card:focus,
+.popup-option:focus,
+.team-contact a:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+/* Ensure all interactive elements are keyboard accessible */
+.feature-card,
+.popup-option {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.feature-card:focus,
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-dark);
+    border-color: var(--accent-color);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-text: #000000;
+        --secondary-text: #000000;
+        --border-color: #000000;
+    }
+    
+    .light-theme {
+        --light-text: #000000;
+        --light-secondary: #000000;
+    }
+}

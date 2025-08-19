@@ -27,6 +27,56 @@
 				margin-bottom: 1rem;
 				line-height: 1.6;
 			}
+			
+			/* Fix text cutoff issues */
+			.hero-content {
+				padding: 6rem 2rem 4rem;
+				z-index: 1;
+			}
+			
+			.hero-title {
+				word-wrap: break-word;
+				overflow-wrap: break-word;
+				hyphens: auto;
+			}
+			
+			.hero-description {
+				word-wrap: break-word;
+				overflow-wrap: break-word;
+			}
+			
+			/* Responsive text adjustments */
+			@media (max-width: 768px) {
+				.hero-content {
+					padding: 4rem 1rem 3rem;
+				}
+				
+				.hero-title {
+					font-size: 2.5rem !important;
+					line-height: 1.2;
+				}
+				
+				.hero-description {
+					font-size: 1.1rem;
+					line-height: 1.6;
+				}
+			}
+			
+			@media (max-width: 480px) {
+				.hero-content {
+					padding: 3rem 1rem 2rem;
+				}
+				
+				.hero-title {
+					font-size: 2rem !important;
+					line-height: 1.2;
+				}
+				
+				.hero-description {
+					font-size: 1rem;
+					line-height: 1.6;
+				}
+			}
 		</style>
 		<link rel="icon" href="assets/img/letter-c.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,23 +103,19 @@
 						<div class="dropdown-content">
 							<a href="article5.html" class="dropdown-link">
 								<i class="fas fa-vr-cardboard"></i>
-								<span>Virtual Reality</span>
+								<span>Virtual Reality Education</span>
 							</a>
 							<a href="article6.html" class="dropdown-link">
 								<i class="fas fa-atom"></i>
-								<span>Reactor Physics</span>
+								<span>CANDU Reactors</span>
 							</a>
 							<a href="article1.html" class="dropdown-link">
 								<i class="fas fa-atom"></i>
-								<span>Reactor Engineering</span>
+								<span>CANDU Virtual Reality Experience</span>
 							</a>
 							<a href="article2.html" class="dropdown-link">
 								<i class="fas fa-atom"></i>
-								<span>Fluid Systems</span>
-							</a>
-							<a href="article3.html" class="dropdown-link">
-								<i class="fas fa-atom"></i>
-								<span>Control Systems</span>
+								<span>Navigation Guide</span>
 							</a>
 						</div>
 					</div>

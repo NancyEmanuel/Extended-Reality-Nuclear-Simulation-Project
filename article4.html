@@ -63,7 +63,10 @@
 			<!-- Hero Section -->
 			<section class="hero-section" style="height: 50vh;">
 				<div class="video-background">
-					<video src="assets/img/video.mp4" muted loop autoplay playsinline alt="CANDU reactor educational content background video"></video>
+					<video src="assets/img/video.mp4" muted loop autoplay playsinline controls aria-label="CANDU reactor educational content background video">
+						<track kind="captions" src="assets/captions/reactor-educational-captions.vtt" srclang="en" label="English Captions" default>
+						<p>Your browser does not support the video element. This video shows CANDU reactor educational content and demonstrations.</p>
+					</video>
 					<div class="video-overlay"></div>
 				</div>
 				<div class="hero-content">
